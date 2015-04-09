@@ -36,6 +36,12 @@
     #import "AFHTTPRequestOperationManager.h"
 #endif
 
+#if TARGET_OS_IPHONE
+    #import "AFNetworkingiOS.h"
+#else
+    #import "AFNetworkingOSX"
+#endif
+
 #if ( ( defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && __MAC_OS_X_VERSION_MAX_ALLOWED >= 1090) || \
       ( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000 ) || \
        TARGET_OS_WATCH )
