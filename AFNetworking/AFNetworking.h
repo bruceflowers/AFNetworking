@@ -29,18 +29,20 @@
     #import "AFURLRequestSerialization.h"
     #import "AFURLResponseSerialization.h"
     #import "AFSecurityPolicy.h"
+#if !TARGET_OS_WATCH
     #import "AFNetworkReachabilityManager.h"
-
     #import "AFURLConnectionOperation.h"
     #import "AFHTTPRequestOperation.h"
     #import "AFHTTPRequestOperationManager.h"
+#endif
 
 #if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
     #import "UIKit+AFNetworking.h"
 #endif
 
 #if ( ( defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && __MAC_OS_X_VERSION_MAX_ALLOWED >= 1090) || \
-      ( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000 ) )
+      ( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000 ) || \
+       TARGET_OS_WATCH )
     #import "AFURLSessionManager.h"
     #import "AFHTTPSessionManager.h"
 #endif
