@@ -82,7 +82,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5148A7B91BB08E460012C1F6 /* AFNetworking-tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "AFNetworking-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5148A7B91BB08E460012C1F6 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5148A7BB1BB08E460012C1F6 /* AFNetworking-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-tvOS.h"; sourceTree = "<group>"; };
 		5148A7BD1BB08E460012C1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5148A7C71BB08E460012C1F6 /* AFNetworking_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNetworking_tvOSTests.swift; sourceTree = "<group>"; };
@@ -258,7 +258,7 @@
 			children = (
 				9A84D4871A88C1E7008EF006 /* AFNetworking.framework */,
 				9A84D4A81A88C20D008EF006 /* AFNetworking.framework */,
-				5148A7B91BB08E460012C1F6 /* AFNetworking-tvOS.framework */,
+				5148A7B91BB08E460012C1F6 /* AFNetworking.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -496,7 +496,7 @@
 			);
 			name = "AFNetworking-tvOS";
 			productName = "AFNetworking-tvOS";
-			productReference = 5148A7B91BB08E460012C1F6 /* AFNetworking-tvOS.framework */;
+			productReference = 5148A7B91BB08E460012C1F6 /* AFNetworking.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9A84D4861A88C1E7008EF006 /* AFNetworking-iOS */ = {
@@ -678,7 +678,7 @@
 				INFOPLIST_FILE = AFNetworking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -700,7 +700,7 @@
 				INFOPLIST_FILE = AFNetworking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(PROJECT_NAME)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 3;
