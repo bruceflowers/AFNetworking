@@ -29,6 +29,8 @@
 #import "AFURLResponseSerialization.h"
 #import "AFURLRequestSerialization.h"
 
+#if !TARGET_OS_TV
+
 @interface UIWebView (_AFNetworking)
 @property (readwrite, nonatomic, strong, setter = af_setHTTPRequestOperation:) AFHTTPRequestOperation *af_HTTPRequestOperation;
 @end
@@ -155,5 +157,5 @@
 }
 
 @end
-
+#endif /*!TARGET_OS_TV*/
 #endif

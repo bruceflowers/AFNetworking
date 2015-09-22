@@ -47,6 +47,7 @@ static void AFGetAlertViewTitleAndMessageFromError(NSError *error, NSString * __
     }
 }
 
+#if !TARGET_OS_TV
 @implementation UIAlertView (AFNetworking)
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED >= 70000
@@ -136,6 +137,7 @@ static void AFGetAlertViewTitleAndMessageFromError(NSError *error, NSString * __
     }];
 }
 
-@end
 
+@end
+#endif /* !TARGET_OS_TV */
 #endif

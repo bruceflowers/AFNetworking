@@ -31,6 +31,7 @@
 #import "AFURLSessionManager.h"
 #endif
 
+#if !TARGET_OS_TV
 @interface AFRefreshControlNotificationObserver : NSObject
 @property (readonly, nonatomic, weak) UIRefreshControl *refreshControl;
 - (instancetype)initWithActivityRefreshControl:(UIRefreshControl *)refreshControl;
@@ -162,5 +163,5 @@
 }
 
 @end
-
+#endif /*!TARGET_OS_TV*/
 #endif
